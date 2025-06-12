@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage Sections</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .section {
+      background-color: white;
+      width: 200px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .section img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      color: #333;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section">
+      <img src="https://img.icons8.com/fluency/96/home.png" alt="Home Logo">
+      <h2>Home</h2>
+    </div>
+
+    <div class="section">
+      <img src="https://img.icons8.com/fluency/96/info.png" alt="About Logo">
+      <h2>About</h2>
+    </div>
+
+    <div class="section">
+      <img src="https://img.icons8.com/fluency/96/image-gallery.png" alt="Gallery Logo">
+      <h2>Gallery</h2>
+    </div>
+
+    <div class="section">
+      <img src="https://img.icons8.com/fluency/96/phone.png" alt="Contact Logo">
+      <h2>Contact</h2>
+    </div>
+  </div>
+
+</body>
+</html>
